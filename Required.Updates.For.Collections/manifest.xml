@@ -1,0 +1,14 @@
+<CustomExtensionManifest ExtensionID="6aa1f17e-f1ba-40e6-9528-7b0914b4694c" Name="Show Required Software Updates For Collection Members" Description="Shows required software updates by device.  Taken from https://eskonr.com/2022/01/sccm-right-click-tools-find-missing-updates-of-a-client/" Version="2.1" Author="Justin Dybedahl">
+	<Deployments>
+  <ActionExtensionDeployment ParentNode="3fd01cd1-9e01-461e-92cd-94866b8d1f39">
+        <FileList>
+          <File Name="Required.updates.xml">
+            <Hash Algorithm="sha256">B36E6AF060FF34B7F0C5FE745E40678B549D34C54DB896C3ACA5C04E60C023D2</Hash>
+          </File>
+	  <File Name="Required.updates.ps1">
+            <Hash Algorithm="sha256">6AFEC49E2F18AF445ACE2EC811E9063008952824F85FD0C819B66857F4A50852</Hash>
+          </File>
+        </FileList>
+      </ActionExtensionDeployment>
+	</Deployments>
+</CustomExtensionManifest>

@@ -1,0 +1,23 @@
+<ActionDescription Class="Group" GroupAsRegion="true" DisplayName="Required Updates" MnemonicDisplayName="Required Updates" Description="Shows the Required updates for the selected device">
+	<ShowOn>
+		<string>ContextMenu</string>  
+	</ShowOn>
+	<ActionGroups>  
+		<ActionDescription Class="Executable" DisplayName="Required Updates" MnemonicDisplayName="Required Updates" Description = "Shows the Required updates for the selected device" RibbonDisplayType="TextAndSmallImage">
+			<ShowOn>
+				<string>ContextMenu</string> <!-- Context Menu -->
+			</ShowOn>
+			<ImagesDescription>
+				<ResourceAssembly>
+					<Assembly>AdminUI.UIResources.dll</Assembly>
+					<Type>Microsoft.ConfigurationManagement.AdminConsole.UIResources.Properties.Resources.resources</Type>
+				</ResourceAssembly>
+				<ImageResourceName>Information</ImageResourceName>
+			</ImagesDescription>
+			<Executable>
+				<FilePath>PowerShell.exe</FilePath>
+				<Parameters>-noninteractive -windowstyle hidden -executionpolicy bypass -File ".\..\Extensions\6aa1f17e-f1ba-40e6-9528-7b0914b4694b\1.0\bin\Required.updates.ps1" -SiteServer "##SUB:__SERVER##" -RSRID "##SUB:ResourceID##"</Parameters>
+			</Executable>
+		</ActionDescription>
+	</ActionGroups>
+</ActionDescription>

@@ -1,0 +1,6 @@
+.Option Explicit
+.set DiskDirectoryTemplate=.
+.Set CabinetNameTemplate="Required.Updates.cab"
+"Required.updates.ps1"
+"Required.updates.xml"
+"manifest.xml"
